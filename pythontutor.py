@@ -2,7 +2,7 @@
 I want to write a program for videos looping for example: 
 My loop check the video URL if the video URL is == (equal to) 
 video URL play the video and loop this video again and again.
-If the video URL is != (not equal to Video URL) Current video URL 
+If the video URL is != (not equal to Video URL) video  
 stop and start the default video. 
 
 in this python script, get the URL from json stream which are store in 
