@@ -1,3 +1,17 @@
+import json 
+import requests
+import webbrowser
+import time
+from apscheduler.schedulers.background import BackgroundScheduler
+
+r = requests.get('http://rhbsr001.koe.wige.local/v1/Data?id=4711')
+packages_json =r.json()
+packages_str = json.dumps(packages_json, indent=2)
+
+REFRESH_INTERVAL = 10 #seconds
+scheduler = BackgroundScheduler()
+scheduler.start()
+
 print(packages_str)
 print(packages_json["stream"])
 
@@ -31,3 +45,9 @@ def myFunction():
             break
 if __name__ == "__main__":
     main()
+
+
+
+    
+            
+                            
