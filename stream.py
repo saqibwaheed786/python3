@@ -1,11 +1,12 @@
 '''
 first get request and and print it which is already done.
-Then start loop if stream is default.play the stream 
-Otherwise if stream is not equal to default stream
+Then start loop if stream is default,play this stream. 
+Otherwise if stream is not equal to default stream.
 close the browser and reopen the browser.
-And play new stream in browser
-loop above condition ever 1 second please help me how can I write this?
-i will be very thankfull to you
+and play new stream in browser
+loop above condition ever 1 second. 
+please help me how can I write proper code ?
+i will be very thankfull to you.
 
 '''
 import json 
@@ -37,4 +38,4 @@ for streams in stream:
                 webbrowser.open(address,new=new)
                 s.enter(10, 1, do_something, (sc,))
                 s.enter(10, 1, do_something, (s,))
-s.run()  
+s.run()
